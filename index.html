@@ -10,7 +10,7 @@
     }
     iframe {
       display: block;       
-      background: #ffffff;
+      background: #000; 
       border: none;        
       height: 100vh;      
       width: 100vw;
@@ -18,17 +18,31 @@
     </style>
  </head>
  <body>
-   <iframe id='framey' frameborder = 0></iframe>
+   <iframe id='framey' frameborder="0" allowfullscreen></iframe>
  </body>
  <script>
    var webpages = [];
-   //---------------just change the webpage URLs
-   //the webpages need to hosted on https sites - if you want more than two just create a new line using the same code as below
-   //just change the link to the google form
-   webpages.push("https://docs.google.com/forms/d/e/1FAIpQLSfLfuayN7YVhFRzAWG87ArEeML6ltEUgDOB5rA9F0KIH2u_5w/viewform?usp=sf_link");
-   webpages.push("https://docs.google.com/forms/d/e/1FAIpQLSdjjtjCVrovMpGDH-9JlBwmXI5kNgK_EmJM1sfBRFDw3C4wWg/viewform?usp=sf_link");
-   //------------------------------------------
-   var random_page = webpages[Math.floor(Math.random()*webpages.length)];
+   // List of YouTube Shorts in embed format
+   webpages.push("https://www.youtube.com/embed/ABajtDyrLk4");
+   webpages.push("https://www.youtube.com/embed/TbxZNrhGYxg");
+   webpages.push("https://www.youtube.com/embed/7aFe5qadPgs");
+   webpages.push("https://www.youtube.com/embed/2AX26IcSwf4");
+   webpages.push("https://www.youtube.com/embed/e4QAd2WZw_U");
+   webpages.push("https://www.youtube.com/embed/sF1bzIvvgI4");
+   webpages.push("https://www.youtube.com/embed/hOVujUNc2OI");
+   webpages.push("https://www.youtube.com/embed/S9QoJ2AAOq0");
+   webpages.push("https://www.youtube.com/embed/VGXmCspw9_I");
+   webpages.push("https://www.youtube.com/embed/b9z88ndsXBw");
+   webpages.push("https://www.youtube.com/embed/pdRJSVoNxUI");
+   webpages.push("https://www.youtube.com/embed/pdsXvrW5eJc");
+   webpages.push("https://www.youtube.com/embed/1KfzA_hwJIg");
+   webpages.push("https://www.youtube.com/embed/tkSBLk4kZpY");
+   webpages.push("https://www.youtube.com/embed/tti1_pyZtw8");
+   webpages.push("https://www.youtube.com/embed/gHegdIVFkhg");
+   webpages.push("https://www.youtube.com/embed/RKb5iWr4w4Q");
+
+   // Pick a random video
+   var random_page = webpages[Math.floor(Math.random() * webpages.length)];
    document.getElementById("framey").src = random_page;
  </script>
 </html>
